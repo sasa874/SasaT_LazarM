@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a8edea, #fed6e3);
+
+    /* sve centrirano */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NASLOV */
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== MENI ===== */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: black;
+    color: white;
+}
+
+/* ===== GLAVNI GALERIJA LINK ===== */
+.glavna-galerija {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.galerija-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid darkorange;
+    transition: 0.3s;
+}
+
+.galerija-link:hover {
+    background: darkorange;
+}
+
+/* ===== KARTICE ===== */
+.card {
+    width: 700px;
+    max-width: 90%;
+    background: white;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* SLIKE */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TEKST */
+.card p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns:
+		repeat(2,1fr);
+        row-gap: 10px;
+        width: 600px;
+        border: 2px solid #50C878;
+    }
+}
